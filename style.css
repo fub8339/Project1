@@ -1,103 +1,483 @@
 body{
+  margin:0;
+  padding:0;
+  
+  }
+
+
+/* h1 {
+  display: flex;
+  flex-direction: column;
+  background-color:black;
+  color:white;
+  padding:10px;
+  margin:0;
+} */
+
+/* nav{
+    background-color:gray;
+    color:white;
+    margin:0;
+    margin-top:1px;
+  } */
+
+/* this below is from week5 lecture */
+
+p {
+  font-size: 18pt;
+}
+
+h1 {
+  font-size: 70px;
+  font-family: sans-serif;
+  margin: 0;
+  padding: 10px;
+  text-align:center;
+}
+nav{
+    font:sans-serif;
+    background-color: black;
+    color: white;
+   
+}
+nav>ul>li{
+    padding:10px;
+}
+nav>ul>li:hover{
+  background-color: #ddd;
+  color: black;
+}
+
+nav>ul>li a:hover{
+  color: black;
+}
+
+nav>ul>li a {
+    float: center;
+    display: block;
+    color: #f2f2f2;
+    text-align: Left;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+#navigation>ul{
+    list-style: none;
+    display:flex;
+    justify-content: space-around;
     margin:0;
     padding:0;
-    
+    font-size:24px;
+}
+
+/* below is for dropdown list */
+.dropdown{
+  position:absolute; /*need to find a  parent that non-static */
+  list-style:none;
+  padding:0;
+  left:0;
+  top:100%; /**what is the different between top:0; and top:100&*/
+  display:none;
+
+}
+
+.clothing:hover > .dropdown{
+display:block;
+}
+
+.clothing:hover > .dropdown>li:hover{
+/* display:block; */
+background-color: #ddd;
+  color: black;
+
+
+}
+
+.dropdown > li{
+padding: 10px;
+border-top: 1px solid white;
+white-space:nowrap;
+background-color: black;
+
+}
+.clothing {
+position: relative;
+}
+
+
+
+/* the above is for dropdown list */
+
+
+
+
+
+
+
+#menu-button{
+    display: none;
+}
+@media(max-width: 600px){
+    #menu-button{
+        display: block;
+        padding: 10px;
+        align-self: stretch;
+        align-items: center;
+        justify-content: center;
+    }
+    header{
+        background-color: black;
+        display:flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+        position:fixed;
+        left:0px;
+        right:0px;
+        top:0px;
+        height: 60px;
+        box-shadow: 0 -15px 10px 20px gray;
+    }
+    main{
+        padding-top:60px;
+    }
+    h1{
+        color: white;
+        padding:10px;
+    }
+    nav{
+        display: none;
+        position:absolute;
+        right:0px;
+        top:100%;
+    }
+    nav.open{
+        display: flex;
+    }
+    nav>ul{
+        flex-direction: column;
+    }
+    nav>ul>li{
+        background-color: black;
+        border-top:1px solid white;
+        color:white;
+    }
+    nav>ul>li:active,.active{
+        background-color: gray;
+    }
+
+    .clothing:hover > .dropdown{
+      display:block;
+      position: absolute;
+      right:0;
     }
 
 
-  /* h1 {
-    display: flex;
-    flex-direction: column;
-    background-color:black;
-    color:white;
-    padding:10px;
-    margin:0;
-  } */
-  
-  /* nav{
-      background-color:gray;
-      color:white;
-      margin:0;
-      margin-top:1px;
-    } */
-  
-  
-    .topnav {
-      overflow: hidden;
-      background-color: #333;
+    #navigation>ul{
+      position: relative;
     }
-    
-    /* Style the topnav links */
-    .topnav a {
-      float: left;
-      display: block;
-      color: #f2f2f2;
-      text-align: center;
-      padding: 14px 16px;
-      text-decoration: none;
-    }
-    
-    /* Change color on hover */
-    .topnav a:hover {
-      background-color: #ddd;
-      color: black;
-    }
-  
 
-
-  .header {
-    background-color: #f1f1f1;
-    padding: 20px;
     
-  }
 
-  img{
-    width:100%;
-    background-color:white;
-    height:350px;
-    padding:20px;
-    box-sizing:border-box;
-  }
-
-  .card{
-		/*border:1px solid black;*/
-		width:300px;
-		/*box-sizing:border-box;*/
-		display:inline-block;
-		/*margin:0;*/
-		/*font-size:11px;*/
-    /* background-color:cornflowerblue; */
-    
-		border-radius:25px;
-		padding:10px;
-		vertical-align:top;
-		
-    }
-    
     #root {
-      
-      width: 960px;
-      display:flex;
-      flex-direction:row;
-      flex-wrap:wrap;
-      margin:70px auto;
-      /* background-color: rgb(200,200,200); */
-      justify-content:space-evenly;
+      width: 600px;
+      /* margin:70px auto; */
       box-shadow:0px 0px 10px rgb(100,100,100);
-  
-  
       }
 
       #root2{
-      width: 960px;
+        width: 600px;
+        display:flex;
+        flex-direction:column;
+        justify-content:space-evenly;
+        flex-wrap:wrap;
+        margin:auto;
+        }
+
+
+
+       
+      
+
+        .column {
+          width: 100%;
+        }
+
+
+
+  }
+      /* this above is responsive */
+  
+  /* Style the topnav links */
+  /* .topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  } */
+  
+  /* Change color on hover */
+  /* .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  } */
+
+
+
+/* .header {
+  background-color: #f1f1f1;
+  padding: 20px;
+  
+} */
+
+#title{
+  text-align: center;
+  margin:0;
+  padding:5px;
+}
+
+img{
+  width:100%;
+  background-color:white;
+  /* height:350px;
+  padding:20px; */
+  box-sizing:border-box;
+  border-radius:25px;
+}
+
+.cloth-intro{
+  padding:2px;
+  font-size:20px;
+  margin:0;
+}
+
+.card{
+  /*border:1px solid black;*/
+  width:300px;
+  /*box-sizing:border-box;*/
+  display:inline-block;
+  /*margin:0;*/
+  /*font-size:11px;*/
+  /* background-color:cornflowerblue; */
+  
+  border-radius:25px;
+  padding:10px;
+  margin:10px;
+  vertical-align:top;
+  
+  }
+  
+  #root {
+    
+    width: 1200px;
+    /* display:flex; */
+    /* flex-direction:row; */
+    /* flex-wrap:wrap; */
+    margin:70px auto;
+    /* background-color: rgb(200,200,200); */
+    /* justify-content:space-evenly; */
+    box-shadow:0px 0px 10px rgb(100,100,100);
+
+    }
+
+    
+    #new-arriving-tag{
+      float: left;
+      /* font-style: bold; */
+      font-size:30px;
+      margin:20px;
+    }
+
+    #see-more-tag{
+      /* float: left; */
+      /* font-style: bold; */
+      font-size:30px;
+      margin:20px;
+      
+    }
+
+
+
+    #root2{
+    width: 1200px;
+    display:flex;
+    flex-direction:row;
+    justify-content:space-evenly;
+    flex-wrap:wrap;
+    margin:auto;
+    }
+
+    
+
+    .gift-card-image{
+      width: 400px;
+      padding:0;
+      position:relative;
+      display:flex;
+      flex-direction:column;
+      justify-content: center;
+      z-index:-1;
+      margin:0;
+
+    }
+
+    .gift-card-image >img{
+      padding: 0;
+      width: 300px;
+      height: 200px;
+
+    }
+
+    .gift-card-section{
       display:flex;
       flex-direction:row;
-      flex-wrap:wrap;
-      margin:0;
+      justify-content: center;
+      
+
+    }
+    .gift-card-input{
+      
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      
+    }
+
+    form{
+      padding: 20px;
+      
+      
+    }
+
+    .gift-card-form-left, .gift-card-form-right{
+      padding-top:10px;
+      padding-right:10px;
+      padding-bottom: 10px;
+    }
+
+    .button{
+      margin-top:20px;
+      /* align-content: right; */
+      float:right;
+    }
+
+    .description{
+      position:absolute;
+      background-color: lightgrey;
+      top:100%;
+      padding:15px;
+      font-size: 10pt;
+      font-family:sans-serif;
+      box-sizing: border-box;
+
       }
 
-      #title{
-        text-align: center;
+      #root3{
+        width: 1200px;
+        display:flex;
+        flex-direction:row;
+        justify-content:space-evenly;
+        flex-wrap:wrap;
         
-      
+        margin:auto;
+        padding-top:50px;
       }
+
+
+
+
+      /* Create three equal columns that floats next to each other */
+      .column {
+        float: left;
+        width: 50%;
+        padding: 15px;
+        box-sizing: border-box;
+      }
+
+      /* Clear floats after the columns */
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+
+      .row{
+        width:1200px;
+        margin:auto;
+      }
+
+      .contact-info{
+        width:1200px;
+        display:flex;
+        flex-direction: column;
+        /* justify-content:center; */
+        align-items:center;
+        margin:auto;
+
+
+      }
+
+      .contact-info > img{
+        padding: 0;
+        width: 600px;
+        height: 400px;
+      }
+
+
+
+      .contact-info-row{
+
+      }
+
+      .contact-info-column{
+        float: left;
+        width: 30%;
+        padding: 10px;
+      }
+
+      /* .contact-info-row:after {
+        content: "";
+        display: table;
+        clear: both;
+      } */
+
+
+      .follow{
+        display: flex;
+        flex-direction: row;
+        justify-content: stretch;
+      }
+
+      .follow-left{
+        flex: 30%;
+        background-color: #f1f1f1;
+        padding: 20px;
+      }
+
+      .button {
+        background-color: black;
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+      }
+
+      .follow-right {
+        flex: 70%;
+        background-color: white;
+        padding: 20px;
+      }
+
+
+
+
+
+
+    

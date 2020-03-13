@@ -1,63 +1,88 @@
 <!DOCTYPE html>
 
 <html lang="en">
-	<head>
-		<title></title>
-        <link rel="stylesheet" href="style.css">
-        
-        
-	</head>
+    <head>
+        <title></title>
+            <link rel="stylesheet" href="style.css">
+            <script defer src="script.js"></script> 
+            <meta name="viewport" content="width=device-width,initial-scale=1">
+            
+      </head>
 	<body>
-      <div class="header">
-        <h1> XXX studio</h1>
-      </div>
-		<nav >
-        <div class="topnav">
-          <a href="#">HomePage</a>
-          <a href="#">Clothing</a>
-          <a href="#">Accessories</a>
-          <a href="#">Makeup</a>
-          <a href="#">About us</a>
-        </div>
-    </nav>
-
+      <header>
+          <h1> XXX studio</h1>
+  
+          <div id="menu-button">
+              <svg viewBox="0 0 100 80" width="30" height="30">
+                <rect fill="white" width="100" height="15"></rect>
+                <rect fill="white" y="30" width="100" height="15"></rect>
+                <rect fill="white" y="60" width="100" height="15"></rect>
+              </svg>
+            </div>
+      
+            <nav id="navigation">
+              <ul >
+                  <li><a href="HomePage.html">HomePage</a> </li>
+                  <li class="clothing"><a href="Clothing.html">Clothing</a>
+                    <ul class="dropdown">
+                        <li><a href="GiftCard.html">Female Clothing</a></li>
+                        <li><a href="GiftCard.html">Male Clothing</a></li>
+                      </ul>
+                  </li>
+                  <li><a href="GiftCard.html">GiftCard</a></li>
+                  <li><a href="Makeup.html">Makeup</a></li>
+                  <li><a href="Contact.html">Contact</a></li>
+                </ul>
+              </nav>
+        </header>
     
     <div id="root">
+      <p id="new-arriving-tag">New Arriving</p>
       
-      <div class="card">
-        <h1 id="title">Clothing1</h3>
-        <img src="Clothing.jpg">
-        <p>Lting and typesy's standard dullt also the leap into elec</p>
-      </div>
-      <div class="card">
-        <h1 id="title">Clothing2</h3>
-        <img src="Clothing.jpg">
-        <p> t also the leap into elec</p>
-      </div>
-      <div class="card">
-        <h1 id="title">Clothing3</h3>
-        <img src="Clothing.jpg">
-        <p>Lorem Ipsum ke a type specimen book. Ias survived not only five centuries, but also the leap into elec</p>
-      </div>
+        <div id="root2">
+            <div class="card">
+              <p id="title">Clothing1</p>
+              <img src="Clothing.jpg">
+              <p class="cloth-intro">Lting and typesy's standard dullt alnto elec</p>
+            </div>
+            <div class="card">
+                <p id="title">Clothing1</p>
+              <img src="Clothing.jpg">
+              <p class="cloth-intro"> t also the leap into elec</p>
+            </div>
+            <div class="card">
+                <p id="title">Clothing1</p>
+              <img src="Clothing.jpg">
+              <p class="cloth-intro">Lorem Ipsum ke a type specimen book. It has survived not only five centuries, but also the leap into elec</p>
+            </div>
+        </div>
+        <p id="see-more-tag">See More...</p>
     </div>
 
+
+
     <div id="root">
-      <div class="card">
-        <h1 id="title">Clothing1</h3>
-        <img src="Clothing.jpg">
-        <p>Lting and typesy's standard dullt also the leap into elec</p>
+        <p id="new-arriving-tag">New Arriving</p>
+        
+          <div id="root2">
+              <div class="card">
+                <p id="title">Clothing1</p>
+                <img src="Clothing.jpg">
+                <p class="cloth-intro">Lting and typesy's standard dullt alnto elec</p>
+              </div>
+              <div class="card">
+                  <p id="title">Clothing1</p>
+                <img src="Clothing.jpg">
+                <p class="cloth-intro"> t also the leap into elec</p>
+              </div>
+              <div class="card">
+                  <p id="title">Clothing1</p>
+                <img src="Clothing.jpg">
+                <p class="cloth-intro">Lorem Ipsum ke a type specimen book. It has survived not only five centuries, but also the leap into elec</p>
+              </div>
+          </div>
+          <p id="see-more-tag">See More...</p>
       </div>
-      <div class="card">
-        <h1 id="title">Clothing2</h3>
-        <img src="Clothing.jpg">
-        <p> t also the leap into elec</p>
-      </div>
-      <div class="card">
-        <h1 id="title">Clothing3</h3>
-        <img src="Clothing.jpg">
-        <p>Lorem Ipsum ke a type specimen book. It has survived not only five centuries, but also the leap into elec</p>
-      </div>
-    </div>
 
 
 
