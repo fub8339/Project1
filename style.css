@@ -189,9 +189,8 @@ position: relative;
       }
 
       #root2{
-        width: 600px;
         display:flex;
-        flex-direction:column;
+        flex-direction:ltr;
         justify-content:space-evenly;
         flex-wrap:wrap;
         margin:auto;
@@ -304,7 +303,6 @@ img{
 
 
     #root2{
-    width: 1200px;
     display:flex;
     flex-direction:row;
     justify-content:space-evenly;
