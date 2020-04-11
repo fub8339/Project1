@@ -1,0 +1,72 @@
+.makeup-row{
+    width:100%;
+    margin:auto;
+    display:flex;
+    flex-direction:row;
+    margin:auto;
+  }    
+    
+    
+.makeup-row:after {
+    content: "";
+    display: table;
+    clear: both;
+    }
+
+#makeupIntro-total{
+    display:none;
+    padding:30px;
+    padding-top:10px;
+    font-family: sans-serif;
+    }
+
+#makeup-image{
+    border-radius: 0;
+    }
+
+
+
+.makeup-column {
+    width: 50%;
+    box-sizing: border-box;
+    }
+
+#makeup-intro{
+    padding:30px;
+    padding-top:10px;
+    font-family: sans-serif;
+    
+    }
+
+
+
+
+@media screen and (max-width: 1000px){
+    .makeup-row{
+        width:100%;
+        margin:auto;
+        display:flex;
+        flex-direction:column;
+        margin:auto;
+      }
+
+      #makeupIntro-total{
+        display:block;
+        padding:30px;
+        padding-top:10px;
+      }
+
+      .makeup-column {
+        width: 100%;
+      }
+
+      #makeup-intro{
+        display:none;
+      }
+
+        
+
+
+
+
+}
