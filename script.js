@@ -21,7 +21,7 @@
           var senderEamil = document.forms["myForm"]["SenderEmailInput"];
           var recipientEmail = document.forms["myForm"]["RecipientEmailInput"];
           var message = document.getElementById('message');
-
+ 
 
           if(quantity.value == ""){
               quantity.focus();
